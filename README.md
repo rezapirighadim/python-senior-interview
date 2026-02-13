@@ -1,0 +1,123 @@
+# Python Senior Interview Prep
+
+A comprehensive, hands-on guide to prepare for **Senior Python Developer** interviews at AI companies. Covers everything from fundamentals to system design, with runnable code examples, real-world patterns, and problem-solving strategies.
+
+## Who Is This For?
+
+- Developers returning to Python after a break
+- Mid-level devs preparing for senior-level interviews
+- Anyone targeting Python roles at AI/ML companies
+
+## Structure
+
+```
+python-senior-interview/
+├── code/           # Runnable Python files (start here)
+│   ├── 01_python_fundamentals.py
+│   ├── 02_advanced_python.py
+│   ├── ...
+│   └── 16_interview_qa.py
+├── docs/           # Markdown reference guides
+│   ├── 01_python_fundamentals.md
+│   ├── 02_advanced_python.md
+│   ├── ...
+│   └── 16_interview_qa.md
+└── README.md
+```
+
+## Topics Covered
+
+| # | Topic | Key Concepts |
+|---|-------|-------------|
+| 01 | **Python Fundamentals** | Data types, strings, lists, dicts, sets, comprehensions, gotchas |
+| 02 | **Advanced Python** | Decorators, generators, context managers, dunder methods, metaclasses |
+| 03 | **Type Hints & Modern Python** | Type annotations, dataclasses, protocols, pattern matching, Pydantic |
+| 04 | **OOP & SOLID Principles** | Single responsibility, open/closed, Liskov, interface segregation, DI |
+| 05 | **Design Patterns** | Singleton, factory, strategy, observer, decorator, builder, repository |
+| 06 | **Functional Programming** | Higher-order functions, functools, itertools, composition, immutability |
+| 07 | **Async Programming** | asyncio, gather, TaskGroup, semaphores, async generators, queues |
+| 08 | **Concurrency & Parallelism** | GIL, threading, multiprocessing, concurrent.futures |
+| 09 | **Celery & Scalability** | Distributed tasks, Redis, caching, rate limiting, message queues |
+| 10 | **FastAPI & Web** | REST APIs, Pydantic, dependency injection, middleware, streaming |
+| 11 | **Testing & Quality** | pytest, mocking, fixtures, property-based testing, code quality tools |
+| 12 | **Data Structures & Algorithms** | Hash maps, linked lists, trees, graphs, heaps, tries, sorting |
+| 13 | **LeetCode Patterns** | Two pointers, sliding window, binary search, DP, backtracking |
+| 14 | **Python for AI** | NumPy, pandas, embeddings, vector DBs, RAG, LangChain, model serving |
+| 15 | **System Design** | Architecture patterns, circuit breaker, caching, microservices, API design |
+| 16 | **Interview Q&A** | 29 real interview questions, behavioral tips, 6-week study plan |
+
+## How to Use
+
+### Run the code files
+
+Every `.py` file is self-contained and runnable:
+
+```bash
+cd code
+python 01_python_fundamentals.py
+python 02_advanced_python.py
+# ...and so on
+```
+
+### Read the docs
+
+The `docs/` folder has the same content in Markdown format for quick reference and review.
+
+### Suggested study order
+
+**Week 1** — Python core (files 01-03)
+**Week 2** — OOP & design (files 04-06)
+**Week 3** — Async & scalability (files 07-10)
+**Week 4** — DSA & LeetCode (files 12-13)
+**Week 5** — System design & AI (files 14-15)
+**Week 6** — Mock interviews (files 11, 16)
+
+### Daily routine
+
+- Morning: 1 hour LeetCode (2-3 problems)
+- Afternoon: 1 hour reading/coding Python concepts
+- Evening: 30 min system design practice
+
+## Requirements
+
+- Python 3.10+ (some features use modern syntax)
+- No external dependencies for core files
+- Optional: `pip install fastapi uvicorn celery redis pydantic pytest` for web/scalability topics
+
+## Quick Reference
+
+### Big-O Cheat Sheet
+
+| Complexity | Name | Example |
+|-----------|------|---------|
+| O(1) | Constant | Dict lookup, list append |
+| O(log n) | Logarithmic | Binary search |
+| O(n) | Linear | List traversal |
+| O(n log n) | Linearithmic | Sorting |
+| O(n²) | Quadratic | Nested loops |
+
+### Pattern Recognition
+
+| Problem Type | Pattern |
+|-------------|---------|
+| Sorted array + find pair | Two Pointers |
+| Subarray of size k | Sliding Window |
+| Find min/max with condition | Binary Search on Answer |
+| Count ways / optimize | Dynamic Programming |
+| Generate all combinations | Backtracking |
+| Overlapping ranges | Merge Intervals |
+| Dependencies / ordering | Topological Sort |
+| Next greater element | Monotonic Stack |
+
+### When to Use What (Concurrency)
+
+| Task Type | Use |
+|----------|-----|
+| I/O-bound (API calls, DB) | `asyncio` |
+| CPU-bound (math, ML) | `multiprocessing` |
+| Blocking I/O libraries | `threading` |
+| Background jobs | Celery + Redis |
+
+## License
+
+MIT
