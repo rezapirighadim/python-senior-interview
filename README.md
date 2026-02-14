@@ -23,9 +23,12 @@ python-senior-interview/
 │   └── 16_interview_qa.md
 ├── lld/            # Low-Level Design problems with solutions
 │   ├── 01_parking_lot.py
-│   ├── 02_library_management.py
 │   ├── ...
 │   └── 10_elevator_system.py
+├── hld/            # High-Level Design (system design) write-ups
+│   ├── 01_url_shortener.md
+│   ├── ...
+│   └── 10_key_value_store.md
 ├── PRACTICE_90MIN.md
 └── README.md
 ```
@@ -73,6 +76,25 @@ cd lld
 python 01_parking_lot.py
 python 07_lru_cache.py
 ```
+
+## High-Level Design (HLD)
+
+The `hld/` folder contains 10 system design problems with full write-ups — the same format you'd present in an interview: requirements, estimates, architecture diagrams, API design, scaling strategy, and trade-offs.
+
+| # | Problem | Key Topics |
+|---|---------|-----------|
+| 01 | **URL Shortener** | Base62, caching, 301 vs 302, read-heavy scaling |
+| 02 | **Chat System** | WebSocket, Kafka, Cassandra, presence, fan-out |
+| 03 | **News Feed** | Fan-out on write vs read, hybrid model, feed ranking |
+| 04 | **Rate Limiter** | Token bucket, sliding window, Redis Lua scripts, distributed |
+| 05 | **Notification System** | Multi-channel, templates, Kafka workers, retry/DLQ |
+| 06 | **File Storage** | Presigned URLs, chunked upload, versioning, S3, sync |
+| 07 | **Search Autocomplete** | Trie, pre-computed top-K, Redis sorted sets, debounce |
+| 08 | **Web Crawler** | URL frontier, politeness, Bloom filter, dedup, LSM |
+| 09 | **AI Inference Service** | GPU serving, dynamic batching, model registry, A/B, streaming |
+| 10 | **Key-Value Store** | Consistent hashing, quorum, LSM tree, vector clocks, gossip |
+
+Each file follows the **4-step interview framework**: Clarify → Estimate → Design → Deep Dive.
 
 ## How to Use
 
