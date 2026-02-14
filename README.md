@@ -19,9 +19,14 @@ python-senior-interview/
 │   └── 16_interview_qa.py
 ├── docs/           # Markdown reference guides
 │   ├── 01_python_fundamentals.md
-│   ├── 02_advanced_python.md
 │   ├── ...
 │   └── 16_interview_qa.md
+├── lld/            # Low-Level Design problems with solutions
+│   ├── 01_parking_lot.py
+│   ├── 02_library_management.py
+│   ├── ...
+│   └── 10_elevator_system.py
+├── PRACTICE_90MIN.md
 └── README.md
 ```
 
@@ -45,6 +50,29 @@ python-senior-interview/
 | 14 | **Python for AI** | NumPy, pandas, embeddings, vector DBs, RAG, LangChain, model serving |
 | 15 | **System Design** | Architecture patterns, circuit breaker, caching, microservices, API design |
 | 16 | **Interview Q&A** | 29 real interview questions, behavioral tips, 6-week study plan |
+
+## Low-Level Design (LLD)
+
+The `lld/` folder contains 10 classic LLD interview problems, each solved with clean Python and real design patterns. Every file is runnable.
+
+| # | Problem | Patterns Used |
+|---|---------|--------------|
+| 01 | **Parking Lot** | Enum, Strategy (pricing), SRP |
+| 02 | **Library Management** | Repository, Enum (status), data modeling |
+| 03 | **URL Shortener** | Base62 encoding, Repository, TTL/expiration |
+| 04 | **Task Scheduler** | Heap (priority queue), State machine, recurring tasks |
+| 05 | **Rate Limiter** | Strategy (3 algorithms: Token Bucket, Sliding Window, Fixed Window) |
+| 06 | **Notification Service** | Strategy (channels), Observer, user preferences |
+| 07 | **LRU Cache** | Doubly linked list + hash map, OrderedDict alternative |
+| 08 | **Event Bus** | Observer/pub-sub, wildcard topics, middleware |
+| 09 | **In-Memory File System** | Composite pattern, tree traversal, path parsing |
+| 10 | **Elevator System** | State machine, Strategy (dispatch), queue-based scheduling |
+
+```bash
+cd lld
+python 01_parking_lot.py
+python 07_lru_cache.py
+```
 
 ## How to Use
 
